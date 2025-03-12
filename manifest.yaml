@@ -1,0 +1,46 @@
+version: 0.0.1
+type: plugin
+author: kt
+name: twcc
+label:
+  en_US: twcc
+  zh_Hans: twcc
+description:
+  en_US: Models provided by TWCC, such as Llama3-FFM-70B and Llama3.1-FFM-70B-32K.
+  zh_Hans: TWCC 提供的模型，例如 Llama3-FFM-70B 和 Llama3.1-FFM-70B-32K。
+icon: image.png
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  models:
+    - provider/twcc.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-11T20:21:42.149916+08:00
+privacy: PRIVACY.md
+verified: false
