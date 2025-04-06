@@ -17,6 +17,7 @@ help:
     en_US: https://www.twcc.ai/user/afsms/model/public/list
 supported_model_types:
   - llm
+  - rerank
 configurate_methods:
   - predefined-model
   - customizable-model
@@ -32,10 +33,16 @@ provider_credential_schema:
         en_US: Enter your API Key
 models:
   llm:
+    position: models/llm/_position.yaml
     predefined:
-      - "models/llm/*.yaml"
+    - models/llm/*.yaml
+  rerank:
+    position: models/rerank/_position.yaml
+    predefined:
+    - models/rerank/*.yaml
 extra:
   python:
     provider_source: provider/twcc.py
     model_sources:
       - "models/llm/llm.py"
+      - "models/rerank/rerank.py"

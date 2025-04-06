@@ -6,8 +6,8 @@ label:
   en_US: twcc
   zh_Hans: twcc
 description:
-  en_US: Models provided by TWCC, such as Llama3-FFM-70B and Llama3.1-FFM-70B-32K.
-  zh_Hans: TWCC 提供的模型，例如 Llama3-FFM-70B 和 Llama3.1-FFM-70B-32K。
+  en_US: Models provided by TWCC, such as Llama3.1-FFM-70B-32K and Meta-Llama3.3-70B-Instruct-32K.
+  zh_Hans: TWCC 提供的模型，例如 Llama3.1-FFM-70B-32K 跟 Meta-Llama3.3-70B-Instruct-32K。
 icon: image.png
 resource:
   memory: 268435456

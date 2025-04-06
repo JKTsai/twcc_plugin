@@ -1,11 +1,11 @@
-model: llama3-ffm-8b-chat
+model: meta-llama3.3-70b-inst-32k
 label:
-  zh_Hans: llama3-ffm-8b-chat
-  en_US: llama3-ffm-8b-chat
+  zh_Hans: meta-llama3.3-70b-inst-32k
+  en_US: meta-llama3.3-70b-inst-32k
 model_type: llm
 model_properties:
   mode: chat
-  context_size: 8000
+  context_size: 32000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -30,7 +30,7 @@ parameter_rules:
     default: 350
     min: 1
 pricing:
-  input: '0.005'
-  output: '0.005'
+  input: '0.03'
+  output: '0.03'
   unit: '0.001'
   currency: TWD
